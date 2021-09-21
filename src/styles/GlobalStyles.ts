@@ -22,16 +22,19 @@ export default createGlobalStyle`
     }
     
     html {
+      background: ${props => props.theme.colors.background};
+      
  
     }
 
     :root {
     --primary: #A34AB1;
     --secondary: #C4C4C4;
-    --textcolor: #5F5F5F;
+
     --white: #ffffff;
-    --black: #000000;
+    --black: #1A1A1A;
     --gray: #7A7A7A;
+
 
     --hightitle: 90px;
     --mediumtitle: 60px;
