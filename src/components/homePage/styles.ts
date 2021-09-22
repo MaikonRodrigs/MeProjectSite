@@ -11,20 +11,27 @@ export const Container = styled.div`
 `;
 
 export const Row = styled.div`
-    background: ${(props) => props.theme.colors.primary};
-    padding: 20px;
+  background: ${(props) => props.theme.colors.primary};
+  padding: 20px;
 
-    @media (min-width: 520px) {
-      padding: 40px;
-    }
+  @media (min-width: 520px) {
+    padding: 40px;
+  }
 
-    > .button-skills {
+  > .button-skills {
     order: 2;
     margin-top: 40px;
   }
 
   @media (min-width: 1024px) {
     padding-top: 60px;
+  }
+  @media (min-width: 1366px) {
+    padding: 150px;
+
+    > .button-skills {
+      margin-top: -120px;
+    }
   }
 `;
 
@@ -39,7 +46,10 @@ export const LeftColumn = styled.div`
 
   @media (min-width: 1024px) {
     order: 0;
-    width: 50%;
+  }
+
+  @media (min-width: 1366px) {
+    padding-right: 150px;
   }
 `;
 
@@ -61,6 +71,14 @@ export const RightColumn = styled.div`
       height: 346px;
       margin-left: -25px;
     }
+
+    @media (min-width: 1366px) {
+      img {
+        width: 546px;
+        height: 546px;
+        margin-left: -120px;
+      }
+    }
   }
 `;
 
@@ -76,6 +94,7 @@ export const RowImg = styled.div`
       display: none;
     }
   }
+
 `;
 export const RowText = styled.div`
   margin-bottom: 40px;
@@ -93,14 +112,34 @@ export const RowText = styled.div`
     font-weight: 100;
     font-size: var(--lowtext);
   }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-weight: 400;
+      font-size: var(--hightitle);
+      margin-bottom: -10px;
+    }
+    span {
+      font-weight: 100;
+      font-size: var(--mediumtext);
+    }
+  }
 `;
 export const ColummImg = styled.div`
+  img {
+    &:hover {
+        filter: blur(1px);
+        cursor: pointer;
+        transition: filter 3s;
+      }
+  }
   @media (min-width: 520px) and (max-width: 720px) {
     img {
       width: 50%;
       height: 50%;
       margin-left: -50px;
     }
+  }
   }
 
   @media (min-width: 720px) {

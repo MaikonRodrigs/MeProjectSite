@@ -7,10 +7,10 @@ export const Button = styled.button`
   align-items: center;
   
   height: 45px;
-  border: 1px solid ${(props) => props.theme.colors.secondary};
+  border: 1px solid ${(props) => props.theme.colors.text_secondary};
   border-radius: 50px;
  
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.text_secondary};
   font-size: var(--mediumtext);
   
 
