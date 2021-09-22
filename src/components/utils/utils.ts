@@ -21,12 +21,15 @@ export const Button = styled.button`
   @media (max-width: 720px) {
     width: 100%;
     margin: 0 auto;
-    margin-top: 40px;
+
   }
 
   @media (min-width: 721px) and (max-width: 820px) {
     width: 100%;
-    margin-top: 40px;
+  }
+
+  @media (min-width: 820px) {
+    width: 40%;
   }
 
   &:hover {
