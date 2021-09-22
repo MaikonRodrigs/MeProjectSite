@@ -1,49 +1,84 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
-  
-  width: 100%;
-  height: 100vh;
+  background: ${(props) => props.theme.colors.primary};
+  padding: 40px 30px 80px;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+`;
 
-  img {
-    width: 190px;
-    opacity: 0.7;
-    cursor: pointer;
-    margin-top: -100px;
+export const LeftColumn = styled.div`
+  order: 1;
+  color: ${(props) => props.theme.colors.text_secondary};
+  h2 {
+    font-weight: 300;
+    font-size: var(--hightext);
+    text-align: justify;
+  }
 
-    &:hover {
-      opacity: 1;
-      transition: opacity 1s;
-    }
+  @media (min-width: 720px) {
+    
   }
 `;
 
-export const TextPrimary = styled.h1`
-  color: ${props => props.theme.colors.secondary};
-  font-weight: 200;
-  font-size: var(--lowtitlemob);
+export const RightColumn = styled.div`
+  order: 0;
+  img {
+    width: 146px;
+    height: 146px;
+    margin-left: -25px;
+  }
 
+  @media (min-width: 560px) {
+  }
+
+}
 `;
 
-export const RowForm = styled.div`
-    border: 1.5px solid ${props => props.theme.colors.secondary};
-    border-radius: 10px;
-    width: 200px;
-    height: 30px;
-    margin: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p {
-        color: ${props => props.theme.colors.secondary};
-        font-size: var(--lowtext);
-        font-weight: 100;
+export const RowImg = styled.div`
+  @media (max-width: 719px) {
+    img {
+      display: none;
     }
+  }
 `;
+export const RowText = styled.div`
+  margin-bottom: 40px;
+  p {
+    font-weight: 100;
+    font-size: var(--mediumtext);
+  }
+  h1 {
+    font-weight: 400;
+    font-size: var(--mediumtitle);
+    margin-bottom: -10px;
+  }
+
+  span {
+    font-weight: 100;
+    font-size: var(--lowtext);
+  }
+`;
+export const ColummImg = styled.div`
+    @media (min-width: 720px) {
+  img {
+    display: none
+  }
+}
+`;
+export const RowDescription = styled.div`
+@media (min-width: 719px) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 250px;
+    margin-top: -30px;
+  }
+}
+  
+`;
+
+/* color: ${(props) => props.theme.colors.secondary}; */

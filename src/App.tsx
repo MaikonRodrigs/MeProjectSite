@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+import { FirstPage } from './components/firstPage/index'; 
 import { HomePage } from './components/homePage/index';
 
 import GlobalStyle from './styles/GlobalStyles'
@@ -17,12 +19,18 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App">
-        <GlobalStyle />
-        <HomePage toggleTheme={toggleTheme} />
-      </div>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <div className="App">
+          <GlobalStyle />
+          <HomePage toggleTheme={toggleTheme} />
+        </div>
+        <Switch>
+          {/* <Route exact path="/" component={FirstPage} />
+          <Route path="/homePage"component={HomePage} /> */}
+        </Switch>
+      </ThemeProvider>
+    </BrowserRouter>
 
   );
 }

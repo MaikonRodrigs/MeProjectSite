@@ -6,8 +6,8 @@ export default {
         primary: '#A34AB1',
         secondary: '#FFFFFF',
         text: '#1A1A1A',
-        text_secondary: 'var(--black)',
+        text_secondary: 'var(--white)',
 
-        background: '#A34AB1'
+        background: '#fff'
     },
 };

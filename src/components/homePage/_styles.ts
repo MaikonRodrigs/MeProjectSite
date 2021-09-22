@@ -4,20 +4,18 @@ export const SectionBanner = styled.div`
   display: flex;
   background: ${(props) => props.theme.colors.primary};
 
-
-
-
+// MobileFirst //
   @media (max-width: 720px) {
     background: blue!important;
     flex-direction: column;
     height: 720px;
 
   }
-
+// Tablet //
   @media (min-width: 721px) and (max-width: 1024px) {
     background: red!important;
   }
-
+// Desktop //
   @media (min-width: 1024px) {
     background: gray!important;
   }

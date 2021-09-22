@@ -38,7 +38,7 @@ export default createGlobalStyle`
 
     --hightitle: 90px;
     --mediumtitle: 60px;
-    --lowtitle: 40px;
+    --lowtitle: 50px;
     --lowtitlemob: 26px; 
     --hightext: 24px;
     --mediumtext: 18px;

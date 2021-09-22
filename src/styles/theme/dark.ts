@@ -8,6 +8,6 @@ export default {
         text: '#fff',
         text_secondary: 'var(--white)',
 
-        background: '#1A1A1A'
+        background: '#1A1A1A' 
     },
 };
