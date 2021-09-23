@@ -13,8 +13,7 @@ interface Props {
 export const HomePage = ({ toggleTheme }: Props) => {
 
     const { title } = useContext(ThemeContext);
-
-
+    
     return (
         <>
             <Row>

@@ -13,6 +13,7 @@ export const Container = styled.div`
 export const Row = styled.div`
   background: ${(props) => props.theme.colors.primary};
   padding: 20px;
+  padding-top: 70px;
 
   @media (min-width: 520px) {
     padding: 40px;
@@ -154,6 +155,7 @@ export const ColummImg = styled.div`
     }
   }
 `;
+
 export const RowDescription = styled.div`
   @media (min-width: 719px) {
     display: flex;
@@ -166,5 +168,6 @@ export const RowDescription = styled.div`
     }
   }
 `;
+
 
 /* color: ${(props) => props.theme.colors.secondary}; */

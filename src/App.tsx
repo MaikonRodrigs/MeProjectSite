@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import { FirstPage } from './components/firstPage/index'; 
 import { HomePage } from './components/homePage/index';
+import { NavBar } from './components/navBar';
 
 import GlobalStyle from './styles/GlobalStyles'
 import { ThemeProvider } from 'styled-components'
@@ -23,6 +24,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <div className="App">
           <GlobalStyle />
+          <NavBar toggleTheme={toggleTheme} />
           <HomePage toggleTheme={toggleTheme} />
         </div>
         <Switch>

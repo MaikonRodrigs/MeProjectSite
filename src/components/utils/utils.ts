@@ -32,6 +32,10 @@ export const Button = styled.button`
     width: 40%;
   }
 
+  @media (min-width: 1366px) {
+    
+  }
+
   &:hover {
     background: ${(props) => props.theme.colors.secondary};
     color: ${(props) => props.theme.colors.primary};
