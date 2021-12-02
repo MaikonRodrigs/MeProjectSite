@@ -21,7 +21,7 @@ export const HomePage = ({ toggleTheme }: Props) => {
                     <LeftColumn>
                         <RowDescription>
                             <RowText>
-                                <p>Hi, <strong>Bruna</strong> my name is Maikon.</p>
+                                <p>Hi, <strong>User</strong> my name is Maikon.</p>
                                 <h1>I'm Front End.</h1>
                                 <span>JavaScript, TypeScript and ReactJS</span>
                             </RowText>
