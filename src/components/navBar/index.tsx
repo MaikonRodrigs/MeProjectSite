@@ -1,9 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { SwitchToggle, IconLight, IconDark, Container, IconNav, NavColumn, NavBarRow, IconNavClose, TextNav, IconClose, NavBG } from './styles';
 
-
-
-
 import { ThemeContext } from 'styled-components'
 
 interface Props {
@@ -17,7 +14,6 @@ export const NavBar = ({ toggleTheme }: Props) => {
 
     const HandlerOpenNav = () => {
         setOpenNav(!openNav);
-        console.log(openNav);
     }
 
     return (

@@ -25,7 +25,7 @@ const App = () => {
         <div className="App">
           <GlobalStyle />
           <NavBar toggleTheme={toggleTheme} />
-          <HomePage toggleTheme={toggleTheme} />
+          <HomePage />
         </div>
         <Switch>
           {/* <Route exact path="/" component={FirstPage} />
